@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/react";
 import MajorBanner from "../components/major.banner";
 import MinorBanner from "../components/minor.banner";
 
-storiesOf("Major Banner", module)
+storiesOf("Component | Banners/Major", module)
   .add("With Only Title", () => (
     <MajorBanner
       title="Banner Title"
@@ -19,7 +19,7 @@ storiesOf("Major Banner", module)
     />
 ));
 
-storiesOf("Minor Banner", module)
+storiesOf("Component | Banners/Minor", module)
   .add("No Pictures", () => (
     <MinorBanner
       title="Banner Title"
