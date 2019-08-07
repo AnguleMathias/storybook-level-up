@@ -1,5 +1,6 @@
 import { addParameters, configure, addDecorator } from '@storybook/react';
 import { withInfo } from  '@storybook/addon-info';
+import { withKnobs } from '@storybook/addon-knobs';
 import crfTheme from './crfTheme';
 
 import "../bootstrap-grid.css";
@@ -22,5 +23,7 @@ addParameters({
 addDecorator(withInfo({
   inline: true
 }));
+
+addDecorator(withKnobs);
 
 configure(loadStories, module);
